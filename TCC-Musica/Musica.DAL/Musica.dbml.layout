@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.875" name="Musica">
+  <DataContextMoniker Name="/MusicaDataContext" />
+  <nestedChildShapes>
+    <classShape Id="0d462771-2932-46b1-9255-d5a4ae0e00c3" absoluteBounds="3.625, 7.125, 2, 1.3862939453125014">
+      <DataClassMoniker Name="/MusicaDataContext/Categoria" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4c77a046-726b-404a-8c4b-9aa6ecb1a1e5" absoluteBounds="3.64, 7.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5f620717-3480-407d-9855-b562d930ff59" absoluteBounds="0.75, 3.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/MusicaDataContext/Cliente" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e0f68559-3d46-4b90-9148-9b1b383a7240" absoluteBounds="0.765, 4.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="66bd9907-3a48-4324-822a-f79f0e4ef35d" absoluteBounds="3.5, 1, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/MusicaDataContext/ContaReceber" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fb387204-d75f-4eb8-b444-fc5b07975ccf" absoluteBounds="3.5149999999999997, 1.46, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="98a7c87a-e74a-4350-85de-f94aa7ba0cbf" absoluteBounds="6.25, 6.875, 2, 1.7708968098958318">
+      <DataClassMoniker Name="/MusicaDataContext/Produto" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5f69e0ad-02a0-4bc5-963a-22dffd039170" absoluteBounds="6.2650000000000006, 7.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b4cc09f7-d945-4845-8d91-268f987b8135" absoluteBounds="6.25, 3.875, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/MusicaDataContext/ItemVenda" />
+      <nestedChildShapes>
+        <elementListCompartment Id="234fd034-e6b6-48db-8853-43109f9de51c" absoluteBounds="6.265, 4.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="08efd471-0512-4464-bf7a-e84b6347436d" absoluteBounds="0.75, 1, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/MusicaDataContext/Funcionario" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9a018153-8e64-4b2a-a31f-07f27bb30324" absoluteBounds="0.76499999999999968, 1.46, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ce5566d6-441b-4ae4-ad61-b420da7f38cb" absoluteBounds="6.375, 1, 2, 1.3862939453125003">
+      <DataClassMoniker Name="/MusicaDataContext/StatusPagamento" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b1ad560d-22ec-44c5-ad04-4e870d3b67e3" absoluteBounds="6.3900000000000006, 1.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="22cca65b-d5d8-4c97-a920-475d952af5eb" absoluteBounds="3.5, 3.875, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/MusicaDataContext/Venda" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2b38fe77-b581-4a06-82ea-b79b05c8e176" absoluteBounds="3.515, 4.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.625 : 7.81814697265625); (6.25 : 7.81814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MusicaDataContext/Categoria/categorias_produtos" />
+      <nodes>
+        <classShapeMoniker Id="0d462771-2932-46b1-9255-d5a4ae0e00c3" />
+        <classShapeMoniker Id="98a7c87a-e74a-4350-85de-f94aa7ba0cbf" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.25 : 6.875); (7.25 : 5.8381982421875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MusicaDataContext/Produto/produtos_itens_venda" />
+      <nodes>
+        <classShapeMoniker Id="98a7c87a-e74a-4350-85de-f94aa7ba0cbf" />
+        <classShapeMoniker Id="b4cc09f7-d945-4845-8d91-268f987b8135" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.375 : 1.69314697265625); (5.5 : 1.69314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MusicaDataContext/StatusPagamento/status_pagamento_contas_receber" />
+      <nodes>
+        <classShapeMoniker Id="ce5566d6-441b-4ae4-ad61-b420da7f38cb" />
+        <classShapeMoniker Id="66bd9907-3a48-4324-822a-f79f0e4ef35d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.5 : 3.875); (4.5 : 3.15549967447917)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MusicaDataContext/Venda/vendas_contas_receber" />
+      <nodes>
+        <classShapeMoniker Id="22cca65b-d5d8-4c97-a920-475d952af5eb" />
+        <classShapeMoniker Id="66bd9907-3a48-4324-822a-f79f0e4ef35d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 4.88860619734075); (6.25 : 4.88860619734075)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MusicaDataContext/Venda/vendas_itens_venda" />
+      <nodes>
+        <classShapeMoniker Id="22cca65b-d5d8-4c97-a920-475d952af5eb" />
+        <classShapeMoniker Id="b4cc09f7-d945-4845-8d91-268f987b8135" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 4.85659912109375); (3.5 : 4.85659912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MusicaDataContext/Cliente/clientes_vendas" />
+      <nodes>
+        <classShapeMoniker Id="5f620717-3480-407d-9855-b562d930ff59" />
+        <classShapeMoniker Id="22cca65b-d5d8-4c97-a920-475d952af5eb" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

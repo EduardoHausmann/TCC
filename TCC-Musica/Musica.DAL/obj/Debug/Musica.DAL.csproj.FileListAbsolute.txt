@@ -1,0 +1,6 @@
+C:\Users\Eduardo\source\repos\TCC-Musica\Musica.DAL\bin\Debug\Musica.DAL.dll.config
+C:\Users\Eduardo\source\repos\TCC-Musica\Musica.DAL\bin\Debug\Musica.DAL.dll
+C:\Users\Eduardo\source\repos\TCC-Musica\Musica.DAL\bin\Debug\Musica.DAL.pdb
+C:\Users\Eduardo\source\repos\TCC-Musica\Musica.DAL\obj\Debug\Musica.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Eduardo\source\repos\TCC-Musica\Musica.DAL\obj\Debug\Musica.DAL.dll
+C:\Users\Eduardo\source\repos\TCC-Musica\Musica.DAL\obj\Debug\Musica.DAL.pdb

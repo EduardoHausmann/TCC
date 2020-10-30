@@ -1,0 +1,13 @@
+C:\Users\Eduardo\source\repos\TCC-Musica\View\bin\Debug\View.exe.config
+C:\Users\Eduardo\source\repos\TCC-Musica\View\bin\Debug\View.exe
+C:\Users\Eduardo\source\repos\TCC-Musica\View\bin\Debug\View.pdb
+C:\Users\Eduardo\source\repos\TCC-Musica\View\bin\Debug\Musica.DAL.dll
+C:\Users\Eduardo\source\repos\TCC-Musica\View\bin\Debug\Musica.DAL.pdb
+C:\Users\Eduardo\source\repos\TCC-Musica\View\bin\Debug\Musica.DAL.dll.config
+C:\Users\Eduardo\source\repos\TCC-Musica\View\obj\Debug\View.csprojAssemblyReference.cache
+C:\Users\Eduardo\source\repos\TCC-Musica\View\obj\Debug\View.Properties.Resources.resources
+C:\Users\Eduardo\source\repos\TCC-Musica\View\obj\Debug\View.csproj.GenerateResource.cache
+C:\Users\Eduardo\source\repos\TCC-Musica\View\obj\Debug\View.csproj.CoreCompileInputs.cache
+C:\Users\Eduardo\source\repos\TCC-Musica\View\obj\Debug\View.csproj.CopyComplete
+C:\Users\Eduardo\source\repos\TCC-Musica\View\obj\Debug\View.exe
+C:\Users\Eduardo\source\repos\TCC-Musica\View\obj\Debug\View.pdb
