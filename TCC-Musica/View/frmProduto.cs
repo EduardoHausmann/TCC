@@ -28,7 +28,6 @@ namespace View
         {
             this.produtoBindingSource.DataSource = DataContextFactory.DataContext.Produto;
             this.categoriaBindingSource.DataSource = DataContextFactory.DataContext.Categoria;
-
             this.produtoBindingSource.AddNew();
         }
 
