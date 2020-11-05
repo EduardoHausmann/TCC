@@ -4,8 +4,7 @@
     <Type Name="Categoria">
       <Column Name="id" Member="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="nome" Member="Nome" Type="System.String" DbType="VarChar(75)" CanBeNull="true" />
-      <Column Name="registro_ativo" Member="RegistroAtivo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Association Name="categorias_produtos" Member="Produto" ThisKey="Id" OtherKey="IdCategorio" Type="Produto" />
+      <Association Name="Categoria_Produto" Member="Produto" ThisKey="Id" OtherKey="IdCategoria" Type="Produto" />
     </Type>
   </Table>
   <Table Name="dbo.clientes" Member="Cliente">
@@ -16,8 +15,7 @@
       <Column Name="cep" Member="CEP" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
       <Column Name="cpf" Member="CPF" Type="System.String" DbType="VarChar(14)" CanBeNull="true" />
       <Column Name="email" Member="Email" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="registro_ativo" Member="RegistroAtivo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Association Name="clientes_vendas" Member="Venda" ThisKey="Id" OtherKey="IdCliente" Type="Venda" />
+      <Association Name="Cliente_Venda" Member="Venda" ThisKey="Id" OtherKey="IdCliente" Type="Venda" />
     </Type>
   </Table>
   <Table Name="dbo.contas_receber" Member="ContaReceber">
@@ -28,9 +26,8 @@
       <Column Name="data_vencimento" Member="DataVencimento" Type="System.DateTime" DbType="Date" CanBeNull="true" />
       <Column Name="id_venda" Member="IdVenda" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="id_status" Member="IdStatus" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="registro_ativo" Member="RegistroAtivo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Association Name="status_pagamento_contas_receber" Member="StatusPagamento" ThisKey="IdStatus" OtherKey="Id" Type="StatusPagamento" IsForeignKey="true" />
-      <Association Name="vendas_contas_receber" Member="Venda" ThisKey="IdVenda" OtherKey="Id" Type="Venda" IsForeignKey="true" />
+      <Association Name="StatusPagamento_ContaReceber" Member="StatusPagamento" ThisKey="IdStatus" OtherKey="Id" Type="StatusPagamento" IsForeignKey="true" />
+      <Association Name="Venda_ContaReceber" Member="Venda" ThisKey="IdVenda" OtherKey="Id" Type="Venda" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.produtos" Member="Produto">
@@ -38,10 +35,9 @@
       <Column Name="id" Member="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="nome" Member="Nome" Type="System.String" DbType="VarChar(75)" CanBeNull="true" />
       <Column Name="valor" Member="Valor" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
-      <Column Name="id_categoria" Member="IdCategorio" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="registro_ativo" Member="RegistroAtivo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Association Name="produtos_itens_venda" Member="ItemVenda" ThisKey="Id" OtherKey="IdProduto" Type="ItemVenda" />
-      <Association Name="categorias_produtos" Member="Categoria" ThisKey="IdCategorio" OtherKey="Id" Type="Categoria" IsForeignKey="true" />
+      <Column Name="id_categoria" Member="IdCategoria" Storage="_IdCategorio" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Produto_ItemVenda" Member="ItemVenda" ThisKey="Id" OtherKey="IdProduto" Type="ItemVenda" />
+      <Association Name="Categoria_Produto" Member="Categoria" ThisKey="IdCategoria" OtherKey="Id" Type="Categoria" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.itens_venda" Member="ItemVenda">
@@ -51,9 +47,8 @@
       <Column Name="valor" Member="Valor" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
       <Column Name="id_produto" Member="IdProduto" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="id_venda" Member="IdVenda" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="registro_ativo" Member="RegistroAtivo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Association Name="produtos_itens_venda" Member="Produto" ThisKey="IdProduto" OtherKey="Id" Type="Produto" IsForeignKey="true" />
-      <Association Name="vendas_itens_venda" Member="Venda" ThisKey="IdVenda" OtherKey="Id" Type="Venda" IsForeignKey="true" />
+      <Association Name="Produto_ItemVenda" Member="Produto" ThisKey="IdProduto" OtherKey="Id" Type="Produto" IsForeignKey="true" />
+      <Association Name="Venda_ItemVenda" Member="Venda" ThisKey="IdVenda" OtherKey="Id" Type="Venda" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.funcionarios" Member="Funcionario">
@@ -64,15 +59,13 @@
       <Column Name="cargo" Member="Cargo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Column Name="salario" Member="Salario" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
       <Column Name="contato" Member="Contato" Type="System.String" DbType="VarChar(14)" CanBeNull="true" />
-      <Column Name="registro_ativo" Member="RegistroAtivo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
     </Type>
   </Table>
   <Table Name="dbo.status_pagamento" Member="StatusPagamento">
     <Type Name="StatusPagamento">
       <Column Name="id" Member="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="status" Member="Status" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="registro_ativo" Member="RegistroAtivo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Association Name="status_pagamento_contas_receber" Member="ContaReceber" ThisKey="Id" OtherKey="IdStatus" Type="ContaReceber" />
+      <Association Name="StatusPagamento_ContaReceber" Member="ContaReceber" ThisKey="Id" OtherKey="IdStatus" Type="ContaReceber" />
     </Type>
   </Table>
   <Table Name="dbo.vendas" Member="Venda">
@@ -82,10 +75,9 @@
       <Column Name="desconto" Member="Desconto" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
       <Column Name="valor_pago" Member="ValorPago" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
       <Column Name="id_cliente" Member="IdCliente" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="registro_ativo" Member="RegistroAtivo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Association Name="vendas_contas_receber" Member="ContaReceber" ThisKey="Id" OtherKey="IdVenda" Type="ContaReceber" />
-      <Association Name="vendas_itens_venda" Member="ItemVenda" ThisKey="Id" OtherKey="IdVenda" Type="ItemVenda" />
-      <Association Name="clientes_vendas" Member="Cliente" ThisKey="IdCliente" OtherKey="Id" Type="Cliente" IsForeignKey="true" />
+      <Association Name="Venda_ContaReceber" Member="ContaReceber" ThisKey="Id" OtherKey="IdVenda" Type="ContaReceber" />
+      <Association Name="Venda_ItemVenda" Member="ItemVenda" ThisKey="Id" OtherKey="IdVenda" Type="ItemVenda" />
+      <Association Name="Cliente_Venda" Member="Cliente" ThisKey="IdCliente" OtherKey="Id" Type="Cliente" IsForeignKey="true" />
     </Type>
   </Table>
 </Database>

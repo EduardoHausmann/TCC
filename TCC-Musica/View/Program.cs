@@ -17,13 +17,13 @@ namespace View
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            frmLogin FormLogin = new frmLogin();
-            FormLogin.ShowDialog();
+            //frmLogin FormLogin = new frmLogin();
+            //FormLogin.ShowDialog();
 
-            if (FormLogin.logado == true)
-            {
+            //if (FormLogin.logado == true)
+            //{
                 Application.Run(new frmPrincipal());
-            }
+            //}
         }
     }
 }

@@ -161,8 +161,6 @@ namespace Musica.DAL
 		
 		private string _Nome;
 		
-		private System.Nullable<bool> _RegistroAtivo;
-		
 		private EntitySet<Produto> _Produto;
 		
     #region Extensibility Method Definitions
@@ -173,8 +171,6 @@ namespace Musica.DAL
     partial void OnIdChanged();
     partial void OnNomeChanging(string value);
     partial void OnNomeChanged();
-    partial void OnRegistroAtivoChanging(System.Nullable<bool> value);
-    partial void OnRegistroAtivoChanged();
     #endregion
 		
 		public Categoria()
@@ -223,27 +219,7 @@ namespace Musica.DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="registro_ativo", Storage="_RegistroAtivo", DbType="Bit")]
-		public System.Nullable<bool> RegistroAtivo
-		{
-			get
-			{
-				return this._RegistroAtivo;
-			}
-			set
-			{
-				if ((this._RegistroAtivo != value))
-				{
-					this.OnRegistroAtivoChanging(value);
-					this.SendPropertyChanging();
-					this._RegistroAtivo = value;
-					this.SendPropertyChanged("RegistroAtivo");
-					this.OnRegistroAtivoChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="categorias_produtos", Storage="_Produto", ThisKey="Id", OtherKey="IdCategorio")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Categoria_Produto", Storage="_Produto", ThisKey="Id", OtherKey="IdCategoria")]
 		public EntitySet<Produto> Produto
 		{
 			get
@@ -307,8 +283,6 @@ namespace Musica.DAL
 		
 		private string _Email;
 		
-		private System.Nullable<bool> _RegistroAtivo;
-		
 		private EntitySet<Venda> _Venda;
 		
     #region Extensibility Method Definitions
@@ -327,8 +301,6 @@ namespace Musica.DAL
     partial void OnCPFChanged();
     partial void OnEmailChanging(string value);
     partial void OnEmailChanged();
-    partial void OnRegistroAtivoChanging(System.Nullable<bool> value);
-    partial void OnRegistroAtivoChanged();
     #endregion
 		
 		public Cliente()
@@ -457,27 +429,7 @@ namespace Musica.DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="registro_ativo", Storage="_RegistroAtivo", DbType="Bit")]
-		public System.Nullable<bool> RegistroAtivo
-		{
-			get
-			{
-				return this._RegistroAtivo;
-			}
-			set
-			{
-				if ((this._RegistroAtivo != value))
-				{
-					this.OnRegistroAtivoChanging(value);
-					this.SendPropertyChanging();
-					this._RegistroAtivo = value;
-					this.SendPropertyChanged("RegistroAtivo");
-					this.OnRegistroAtivoChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="clientes_vendas", Storage="_Venda", ThisKey="Id", OtherKey="IdCliente")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Cliente_Venda", Storage="_Venda", ThisKey="Id", OtherKey="IdCliente")]
 		public EntitySet<Venda> Venda
 		{
 			get
@@ -541,8 +493,6 @@ namespace Musica.DAL
 		
 		private System.Nullable<int> _IdStatus;
 		
-		private System.Nullable<bool> _RegistroAtivo;
-		
 		private EntityRef<StatusPagamento> _StatusPagamento;
 		
 		private EntityRef<Venda> _Venda;
@@ -563,8 +513,6 @@ namespace Musica.DAL
     partial void OnIdVendaChanged();
     partial void OnIdStatusChanging(System.Nullable<int> value);
     partial void OnIdStatusChanged();
-    partial void OnRegistroAtivoChanging(System.Nullable<bool> value);
-    partial void OnRegistroAtivoChanged();
     #endregion
 		
 		public ContaReceber()
@@ -694,27 +642,7 @@ namespace Musica.DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="registro_ativo", Storage="_RegistroAtivo", DbType="Bit")]
-		public System.Nullable<bool> RegistroAtivo
-		{
-			get
-			{
-				return this._RegistroAtivo;
-			}
-			set
-			{
-				if ((this._RegistroAtivo != value))
-				{
-					this.OnRegistroAtivoChanging(value);
-					this.SendPropertyChanging();
-					this._RegistroAtivo = value;
-					this.SendPropertyChanged("RegistroAtivo");
-					this.OnRegistroAtivoChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="status_pagamento_contas_receber", Storage="_StatusPagamento", ThisKey="IdStatus", OtherKey="Id", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="StatusPagamento_ContaReceber", Storage="_StatusPagamento", ThisKey="IdStatus", OtherKey="Id", IsForeignKey=true)]
 		public StatusPagamento StatusPagamento
 		{
 			get
@@ -748,7 +676,7 @@ namespace Musica.DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="vendas_contas_receber", Storage="_Venda", ThisKey="IdVenda", OtherKey="Id", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Venda_ContaReceber", Storage="_Venda", ThisKey="IdVenda", OtherKey="Id", IsForeignKey=true)]
 		public Venda Venda
 		{
 			get
@@ -817,8 +745,6 @@ namespace Musica.DAL
 		
 		private System.Nullable<int> _IdCategorio;
 		
-		private System.Nullable<bool> _RegistroAtivo;
-		
 		private EntitySet<ItemVenda> _ItemVenda;
 		
 		private EntityRef<Categoria> _Categoria;
@@ -833,10 +759,8 @@ namespace Musica.DAL
     partial void OnNomeChanged();
     partial void OnValorChanging(System.Nullable<decimal> value);
     partial void OnValorChanged();
-    partial void OnIdCategorioChanging(System.Nullable<int> value);
-    partial void OnIdCategorioChanged();
-    partial void OnRegistroAtivoChanging(System.Nullable<bool> value);
-    partial void OnRegistroAtivoChanged();
+    partial void OnIdCategoriaChanging(System.Nullable<int> value);
+    partial void OnIdCategoriaChanged();
     #endregion
 		
 		public Produto()
@@ -907,7 +831,7 @@ namespace Musica.DAL
 		}
 		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="id_categoria", Storage="_IdCategorio", DbType="Int")]
-		public System.Nullable<int> IdCategorio
+		public System.Nullable<int> IdCategoria
 		{
 			get
 			{
@@ -917,36 +841,16 @@ namespace Musica.DAL
 			{
 				if ((this._IdCategorio != value))
 				{
-					this.OnIdCategorioChanging(value);
+					this.OnIdCategoriaChanging(value);
 					this.SendPropertyChanging();
 					this._IdCategorio = value;
-					this.SendPropertyChanged("IdCategorio");
-					this.OnIdCategorioChanged();
+					this.SendPropertyChanged("IdCategoria");
+					this.OnIdCategoriaChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="registro_ativo", Storage="_RegistroAtivo", DbType="Bit")]
-		public System.Nullable<bool> RegistroAtivo
-		{
-			get
-			{
-				return this._RegistroAtivo;
-			}
-			set
-			{
-				if ((this._RegistroAtivo != value))
-				{
-					this.OnRegistroAtivoChanging(value);
-					this.SendPropertyChanging();
-					this._RegistroAtivo = value;
-					this.SendPropertyChanged("RegistroAtivo");
-					this.OnRegistroAtivoChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="produtos_itens_venda", Storage="_ItemVenda", ThisKey="Id", OtherKey="IdProduto")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Produto_ItemVenda", Storage="_ItemVenda", ThisKey="Id", OtherKey="IdProduto")]
 		public EntitySet<ItemVenda> ItemVenda
 		{
 			get
@@ -959,7 +863,7 @@ namespace Musica.DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="categorias_produtos", Storage="_Categoria", ThisKey="IdCategorio", OtherKey="Id", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Categoria_Produto", Storage="_Categoria", ThisKey="IdCategoria", OtherKey="Id", IsForeignKey=true)]
 		public Categoria Categoria
 		{
 			get
@@ -1042,8 +946,6 @@ namespace Musica.DAL
 		
 		private System.Nullable<int> _IdVenda;
 		
-		private System.Nullable<bool> _RegistroAtivo;
-		
 		private EntityRef<Produto> _Produto;
 		
 		private EntityRef<Venda> _Venda;
@@ -1062,8 +964,6 @@ namespace Musica.DAL
     partial void OnIdProdutoChanged();
     partial void OnIdVendaChanging(System.Nullable<int> value);
     partial void OnIdVendaChanged();
-    partial void OnRegistroAtivoChanging(System.Nullable<bool> value);
-    partial void OnRegistroAtivoChanged();
     #endregion
 		
 		public ItemVenda()
@@ -1173,27 +1073,7 @@ namespace Musica.DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="registro_ativo", Storage="_RegistroAtivo", DbType="Bit")]
-		public System.Nullable<bool> RegistroAtivo
-		{
-			get
-			{
-				return this._RegistroAtivo;
-			}
-			set
-			{
-				if ((this._RegistroAtivo != value))
-				{
-					this.OnRegistroAtivoChanging(value);
-					this.SendPropertyChanging();
-					this._RegistroAtivo = value;
-					this.SendPropertyChanged("RegistroAtivo");
-					this.OnRegistroAtivoChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="produtos_itens_venda", Storage="_Produto", ThisKey="IdProduto", OtherKey="Id", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Produto_ItemVenda", Storage="_Produto", ThisKey="IdProduto", OtherKey="Id", IsForeignKey=true)]
 		public Produto Produto
 		{
 			get
@@ -1227,7 +1107,7 @@ namespace Musica.DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="vendas_itens_venda", Storage="_Venda", ThisKey="IdVenda", OtherKey="Id", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Venda_ItemVenda", Storage="_Venda", ThisKey="IdVenda", OtherKey="Id", IsForeignKey=true)]
 		public Venda Venda
 		{
 			get
@@ -1300,8 +1180,6 @@ namespace Musica.DAL
 		
 		private string _Contato;
 		
-		private System.Nullable<bool> _RegistroAtivo;
-		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -1318,8 +1196,6 @@ namespace Musica.DAL
     partial void OnSalarioChanged();
     partial void OnContatoChanging(string value);
     partial void OnContatoChanged();
-    partial void OnRegistroAtivoChanging(System.Nullable<bool> value);
-    partial void OnRegistroAtivoChanged();
     #endregion
 		
 		public Funcionario()
@@ -1447,26 +1323,6 @@ namespace Musica.DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="registro_ativo", Storage="_RegistroAtivo", DbType="Bit")]
-		public System.Nullable<bool> RegistroAtivo
-		{
-			get
-			{
-				return this._RegistroAtivo;
-			}
-			set
-			{
-				if ((this._RegistroAtivo != value))
-				{
-					this.OnRegistroAtivoChanging(value);
-					this.SendPropertyChanging();
-					this._RegistroAtivo = value;
-					this.SendPropertyChanged("RegistroAtivo");
-					this.OnRegistroAtivoChanged();
-				}
-			}
-		}
-		
 		public event PropertyChangingEventHandler PropertyChanging;
 		
 		public event PropertyChangedEventHandler PropertyChanged;
@@ -1498,8 +1354,6 @@ namespace Musica.DAL
 		
 		private string _Status;
 		
-		private System.Nullable<bool> _RegistroAtivo;
-		
 		private EntitySet<ContaReceber> _ContaReceber;
 		
     #region Extensibility Method Definitions
@@ -1510,8 +1364,6 @@ namespace Musica.DAL
     partial void OnIdChanged();
     partial void OnStatusChanging(string value);
     partial void OnStatusChanged();
-    partial void OnRegistroAtivoChanging(System.Nullable<bool> value);
-    partial void OnRegistroAtivoChanged();
     #endregion
 		
 		public StatusPagamento()
@@ -1560,27 +1412,7 @@ namespace Musica.DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="registro_ativo", Storage="_RegistroAtivo", DbType="Bit")]
-		public System.Nullable<bool> RegistroAtivo
-		{
-			get
-			{
-				return this._RegistroAtivo;
-			}
-			set
-			{
-				if ((this._RegistroAtivo != value))
-				{
-					this.OnRegistroAtivoChanging(value);
-					this.SendPropertyChanging();
-					this._RegistroAtivo = value;
-					this.SendPropertyChanged("RegistroAtivo");
-					this.OnRegistroAtivoChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="status_pagamento_contas_receber", Storage="_ContaReceber", ThisKey="Id", OtherKey="IdStatus")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="StatusPagamento_ContaReceber", Storage="_ContaReceber", ThisKey="Id", OtherKey="IdStatus")]
 		public EntitySet<ContaReceber> ContaReceber
 		{
 			get
@@ -1642,8 +1474,6 @@ namespace Musica.DAL
 		
 		private System.Nullable<int> _IdCliente;
 		
-		private System.Nullable<bool> _RegistroAtivo;
-		
 		private EntitySet<ContaReceber> _ContaReceber;
 		
 		private EntitySet<ItemVenda> _ItemVenda;
@@ -1664,8 +1494,6 @@ namespace Musica.DAL
     partial void OnValorPagoChanged();
     partial void OnIdClienteChanging(System.Nullable<int> value);
     partial void OnIdClienteChanged();
-    partial void OnRegistroAtivoChanging(System.Nullable<bool> value);
-    partial void OnRegistroAtivoChanged();
     #endregion
 		
 		public Venda()
@@ -1776,27 +1604,7 @@ namespace Musica.DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="registro_ativo", Storage="_RegistroAtivo", DbType="Bit")]
-		public System.Nullable<bool> RegistroAtivo
-		{
-			get
-			{
-				return this._RegistroAtivo;
-			}
-			set
-			{
-				if ((this._RegistroAtivo != value))
-				{
-					this.OnRegistroAtivoChanging(value);
-					this.SendPropertyChanging();
-					this._RegistroAtivo = value;
-					this.SendPropertyChanged("RegistroAtivo");
-					this.OnRegistroAtivoChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="vendas_contas_receber", Storage="_ContaReceber", ThisKey="Id", OtherKey="IdVenda")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Venda_ContaReceber", Storage="_ContaReceber", ThisKey="Id", OtherKey="IdVenda")]
 		public EntitySet<ContaReceber> ContaReceber
 		{
 			get
@@ -1809,7 +1617,7 @@ namespace Musica.DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="vendas_itens_venda", Storage="_ItemVenda", ThisKey="Id", OtherKey="IdVenda")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Venda_ItemVenda", Storage="_ItemVenda", ThisKey="Id", OtherKey="IdVenda")]
 		public EntitySet<ItemVenda> ItemVenda
 		{
 			get
@@ -1822,7 +1630,7 @@ namespace Musica.DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="clientes_vendas", Storage="_Cliente", ThisKey="IdCliente", OtherKey="Id", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Cliente_Venda", Storage="_Cliente", ThisKey="IdCliente", OtherKey="Id", IsForeignKey=true)]
 		public Cliente Cliente
 		{
 			get
