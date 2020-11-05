@@ -36,13 +36,19 @@ namespace View
             {
                 this.categoriaBindingSource.EndEdit();
                 DataContextFactory.DataContext.SubmitChanges();
-                MessageBox.Show("Categoria armazenada com sucesso!");
+                dgvCategoria.Refresh();
+                MessageBox.Show("Armazenado com Sucesso!");
             }
 
-            if (MessageBox.Show("Deseja cadastrar outra categoria?", "Confirmação", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            if (MessageBox.Show("Adinionar outra?", "Confirmação", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 this.categoriaBindingSource.AddNew();
             }
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.categoriaBindingSource.CancelEdit();
         }
 
         private void btnExcluir_Click(object sender, EventArgs e)
