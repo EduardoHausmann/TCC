@@ -33,7 +33,7 @@ namespace View
             if (MeusFormularios.FormProdutoCategoriaRelatorio == null)
                 MeusFormularios.FormProdutoCategoriaRelatorio = new frmProdutoCategoriaRelatorio();
 
-            //MeusFormularios.FormProdutoCategoriaRelatorio.IdCategoria = (int)cbCategoria.SelectedValue;
+            MeusFormularios.FormProdutoCategoriaRelatorio.IdCategoria = (int)cbCategoria.SelectedValue;
             MeusFormularios.FormProdutoCategoriaRelatorio.Show();
             MeusFormularios.FormProdutoCategoriaRelatorio.Focus();
         }
