@@ -28,20 +28,38 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.crvProduto = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.SuspendLayout();
+            // 
+            // crvProduto
+            // 
+            this.crvProduto.ActiveViewIndex = -1;
+            this.crvProduto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.crvProduto.Cursor = System.Windows.Forms.Cursors.Default;
+            this.crvProduto.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.crvProduto.Location = new System.Drawing.Point(0, 0);
+            this.crvProduto.Name = "crvProduto";
+            this.crvProduto.Size = new System.Drawing.Size(877, 450);
+            this.crvProduto.TabIndex = 0;
+            this.crvProduto.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
             // 
             // frmProdutoRelatorio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(877, 450);
+            this.Controls.Add(this.crvProduto);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmProdutoRelatorio";
             this.Text = ".: Relatório de Produtos :.";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmProdutoRelatorio_FormClosed);
+            this.Load += new System.EventHandler(this.frmProdutoRelatorio_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private CrystalDecisions.Windows.Forms.CrystalReportViewer crvProduto;
     }
 }
