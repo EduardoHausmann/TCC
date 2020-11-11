@@ -27,6 +27,10 @@ namespace View
         private void frmFuncionario_Load(object sender, EventArgs e)
         {
             this.funcionarioBindingSource.DataSource = DataContextFactory.DataContext.Funcionario;
+        }
+
+        private void btnNovo_Click(object sender, EventArgs e)
+        {
             this.funcionarioBindingSource.AddNew();
         }
 

@@ -37,10 +37,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.categoriaBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-            // categoriaBindingSource
-            // 
-            this.categoriaBindingSource.DataSource = typeof(Musica.DAL.Categoria);
-            // 
             // lblCategoria
             // 
             lblCategoria.AutoSize = true;
@@ -50,6 +46,10 @@
             lblCategoria.Size = new System.Drawing.Size(178, 20);
             lblCategoria.TabIndex = 1;
             lblCategoria.Text = "Selecione um Categoria";
+            // 
+            // categoriaBindingSource
+            // 
+            this.categoriaBindingSource.DataSource = typeof(Musica.DAL.Categoria);
             // 
             // cbCategoria
             // 
@@ -66,7 +66,7 @@
             // 
             // brnGeral
             // 
-            this.brnGeral.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.brnGeral.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.brnGeral.Location = new System.Drawing.Point(103, 70);
             this.brnGeral.Name = "brnGeral";
             this.brnGeral.Size = new System.Drawing.Size(148, 37);

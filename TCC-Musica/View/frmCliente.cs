@@ -27,6 +27,10 @@ namespace View
         private void frmCliente_Load(object sender, EventArgs e)
         {
             this.clienteBindingSource.DataSource = DataContextFactory.DataContext.Cliente;
+        }
+
+        private void btnNovo_Click(object sender, EventArgs e)
+        {
             this.clienteBindingSource.AddNew();
         }
 
@@ -38,11 +42,6 @@ namespace View
                 DataContextFactory.DataContext.SubmitChanges();
                 dgvCliente.Refresh();
                 MessageBox.Show("Armazenado com Sucesso!");
-            }
-
-            if (MessageBox.Show("Adinionar outra?", "Confirmação", MessageBoxButtons.YesNo) == DialogResult.Yes)
-            {
-                this.clienteBindingSource.AddNew();
             }
         }
 

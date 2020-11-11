@@ -49,6 +49,7 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
+            this.btnNovo = new System.Windows.Forms.Button();
             lblUsuario = new System.Windows.Forms.Label();
             lblSenha = new System.Windows.Forms.Label();
             lblCargo = new System.Windows.Forms.Label();
@@ -57,6 +58,56 @@
             ((System.ComponentModel.ISupportInitialize)(this.funcionarioBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFuncionario)).BeginInit();
             this.SuspendLayout();
+            // 
+            // lblUsuario
+            // 
+            lblUsuario.AutoSize = true;
+            lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            lblUsuario.Location = new System.Drawing.Point(12, 9);
+            lblUsuario.Name = "lblUsuario";
+            lblUsuario.Size = new System.Drawing.Size(64, 20);
+            lblUsuario.TabIndex = 1;
+            lblUsuario.Text = "Usuário";
+            // 
+            // lblSenha
+            // 
+            lblSenha.AutoSize = true;
+            lblSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            lblSenha.Location = new System.Drawing.Point(281, 9);
+            lblSenha.Name = "lblSenha";
+            lblSenha.Size = new System.Drawing.Size(56, 20);
+            lblSenha.TabIndex = 3;
+            lblSenha.Text = "Senha";
+            // 
+            // lblCargo
+            // 
+            lblCargo.AutoSize = true;
+            lblCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            lblCargo.Location = new System.Drawing.Point(12, 61);
+            lblCargo.Name = "lblCargo";
+            lblCargo.Size = new System.Drawing.Size(52, 20);
+            lblCargo.TabIndex = 5;
+            lblCargo.Text = "Cargo";
+            // 
+            // lblSalario
+            // 
+            lblSalario.AutoSize = true;
+            lblSalario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            lblSalario.Location = new System.Drawing.Point(210, 61);
+            lblSalario.Name = "lblSalario";
+            lblSalario.Size = new System.Drawing.Size(58, 20);
+            lblSalario.TabIndex = 7;
+            lblSalario.Text = "Salário";
+            // 
+            // lblContato
+            // 
+            lblContato.AutoSize = true;
+            lblContato.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            lblContato.Location = new System.Drawing.Point(363, 61);
+            lblContato.Name = "lblContato";
+            lblContato.Size = new System.Drawing.Size(66, 20);
+            lblContato.TabIndex = 9;
+            lblContato.Text = "Contato";
             // 
             // funcionarioBindingSource
             // 
@@ -118,16 +169,6 @@
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             this.dataGridViewTextBoxColumn6.ReadOnly = true;
             // 
-            // lblUsuario
-            // 
-            lblUsuario.AutoSize = true;
-            lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            lblUsuario.Location = new System.Drawing.Point(12, 9);
-            lblUsuario.Name = "lblUsuario";
-            lblUsuario.Size = new System.Drawing.Size(64, 20);
-            lblUsuario.TabIndex = 1;
-            lblUsuario.Text = "Usuário";
-            // 
             // txtUsuario
             // 
             this.txtUsuario.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.funcionarioBindingSource, "Usuario", true));
@@ -136,16 +177,6 @@
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(242, 26);
             this.txtUsuario.TabIndex = 2;
-            // 
-            // lblSenha
-            // 
-            lblSenha.AutoSize = true;
-            lblSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            lblSenha.Location = new System.Drawing.Point(281, 9);
-            lblSenha.Name = "lblSenha";
-            lblSenha.Size = new System.Drawing.Size(56, 20);
-            lblSenha.TabIndex = 3;
-            lblSenha.Text = "Senha";
             // 
             // txtSenha
             // 
@@ -157,16 +188,6 @@
             this.txtSenha.Size = new System.Drawing.Size(235, 26);
             this.txtSenha.TabIndex = 4;
             // 
-            // lblCargo
-            // 
-            lblCargo.AutoSize = true;
-            lblCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            lblCargo.Location = new System.Drawing.Point(12, 61);
-            lblCargo.Name = "lblCargo";
-            lblCargo.Size = new System.Drawing.Size(52, 20);
-            lblCargo.TabIndex = 5;
-            lblCargo.Text = "Cargo";
-            // 
             // txtCargo
             // 
             this.txtCargo.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.funcionarioBindingSource, "Cargo", true));
@@ -175,16 +196,6 @@
             this.txtCargo.Name = "txtCargo";
             this.txtCargo.Size = new System.Drawing.Size(170, 26);
             this.txtCargo.TabIndex = 6;
-            // 
-            // lblSalario
-            // 
-            lblSalario.AutoSize = true;
-            lblSalario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            lblSalario.Location = new System.Drawing.Point(210, 61);
-            lblSalario.Name = "lblSalario";
-            lblSalario.Size = new System.Drawing.Size(58, 20);
-            lblSalario.TabIndex = 7;
-            lblSalario.Text = "Salário";
             // 
             // mbSalario
             // 
@@ -195,16 +206,6 @@
             this.mbSalario.Name = "mbSalario";
             this.mbSalario.Size = new System.Drawing.Size(118, 26);
             this.mbSalario.TabIndex = 8;
-            // 
-            // lblContato
-            // 
-            lblContato.AutoSize = true;
-            lblContato.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            lblContato.Location = new System.Drawing.Point(363, 61);
-            lblContato.Name = "lblContato";
-            lblContato.Size = new System.Drawing.Size(66, 20);
-            lblContato.TabIndex = 9;
-            lblContato.Text = "Contato";
             // 
             // mbContato
             // 
@@ -218,10 +219,10 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(223, 133);
+            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.Location = new System.Drawing.Point(248, 133);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(98, 34);
+            this.btnCancelar.Size = new System.Drawing.Size(81, 34);
             this.btnCancelar.TabIndex = 13;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -229,10 +230,10 @@
             // 
             // btnExcluir
             // 
-            this.btnExcluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExcluir.Location = new System.Drawing.Point(324, 133);
+            this.btnExcluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExcluir.Location = new System.Drawing.Point(335, 133);
             this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(75, 34);
+            this.btnExcluir.Size = new System.Drawing.Size(65, 34);
             this.btnExcluir.TabIndex = 12;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
@@ -240,20 +241,32 @@
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalvar.Location = new System.Drawing.Point(144, 133);
+            this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalvar.Location = new System.Drawing.Point(181, 133);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(75, 34);
+            this.btnSalvar.Size = new System.Drawing.Size(61, 34);
             this.btnSalvar.TabIndex = 11;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
+            // 
+            // btnNovo
+            // 
+            this.btnNovo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNovo.Location = new System.Drawing.Point(120, 134);
+            this.btnNovo.Name = "btnNovo";
+            this.btnNovo.Size = new System.Drawing.Size(55, 34);
+            this.btnNovo.TabIndex = 14;
+            this.btnNovo.Text = "Novo";
+            this.btnNovo.UseVisualStyleBackColor = true;
+            this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
             // frmFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(532, 401);
+            this.Controls.Add(this.btnNovo);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.btnSalvar);
@@ -297,5 +310,6 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.Button btnSalvar;
+        private System.Windows.Forms.Button btnNovo;
     }
 }

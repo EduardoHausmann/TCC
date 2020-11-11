@@ -27,6 +27,10 @@ namespace View
         private void frmCategoria_Load(object sender, EventArgs e)
         {
             this.categoriaBindingSource.DataSource = DataContextFactory.DataContext.Categoria;
+        }
+
+        private void btnNovo_Click(object sender, EventArgs e)
+        {
             this.categoriaBindingSource.AddNew();
         }
 
@@ -38,11 +42,6 @@ namespace View
                 DataContextFactory.DataContext.SubmitChanges();
                 dgvCategoria.Refresh();
                 MessageBox.Show("Armazenado com Sucesso!");
-            }
-
-            if (MessageBox.Show("Adinionar outra?", "Confirmação", MessageBoxButtons.YesNo) == DialogResult.Yes)
-            {
-                this.categoriaBindingSource.AddNew();
             }
         }
 

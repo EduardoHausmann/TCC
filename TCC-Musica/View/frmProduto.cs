@@ -28,6 +28,10 @@ namespace View
         {
             this.produtoBindingSource.DataSource = DataContextFactory.DataContext.Produto;
             this.categoriaBindingSource.DataSource = DataContextFactory.DataContext.Categoria;
+        }
+
+        private void btnNovo_Click(object sender, EventArgs e)
+        {
             this.produtoBindingSource.AddNew();
         }
 
@@ -39,11 +43,6 @@ namespace View
                 DataContextFactory.DataContext.SubmitChanges();
                 dgvProduto.Refresh();
                 MessageBox.Show("Armazenado com Sucesso!");
-            }
-
-            if (MessageBox.Show("Adicionar outro?", "Confirmação!", MessageBoxButtons.YesNo) == DialogResult.Yes)
-            {
-                this.produtoBindingSource.AddNew();
             }
         }
 

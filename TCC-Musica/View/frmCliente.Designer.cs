@@ -50,6 +50,7 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
+            this.btnNovo = new System.Windows.Forms.Button();
             lblNome = new System.Windows.Forms.Label();
             lblEmail = new System.Windows.Forms.Label();
             lblCelular = new System.Windows.Forms.Label();
@@ -58,6 +59,56 @@
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCliente)).BeginInit();
             this.SuspendLayout();
+            // 
+            // lblNome
+            // 
+            lblNome.AutoSize = true;
+            lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            lblNome.Location = new System.Drawing.Point(16, 9);
+            lblNome.Name = "lblNome";
+            lblNome.Size = new System.Drawing.Size(51, 20);
+            lblNome.TabIndex = 1;
+            lblNome.Text = "Nome";
+            // 
+            // lblEmail
+            // 
+            lblEmail.AutoSize = true;
+            lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            lblEmail.Location = new System.Drawing.Point(178, 61);
+            lblEmail.Name = "lblEmail";
+            lblEmail.Size = new System.Drawing.Size(48, 20);
+            lblEmail.TabIndex = 9;
+            lblEmail.Text = "Email";
+            // 
+            // lblCelular
+            // 
+            lblCelular.AutoSize = true;
+            lblCelular.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            lblCelular.Location = new System.Drawing.Point(263, 9);
+            lblCelular.Name = "lblCelular";
+            lblCelular.Size = new System.Drawing.Size(58, 20);
+            lblCelular.TabIndex = 10;
+            lblCelular.Text = "Celular";
+            // 
+            // lblCEP
+            // 
+            lblCEP.AutoSize = true;
+            lblCEP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            lblCEP.Location = new System.Drawing.Point(432, 9);
+            lblCEP.Name = "lblCEP";
+            lblCEP.Size = new System.Drawing.Size(41, 20);
+            lblCEP.TabIndex = 11;
+            lblCEP.Text = "CEP";
+            // 
+            // lblCPf
+            // 
+            lblCPf.AutoSize = true;
+            lblCPf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            lblCPf.Location = new System.Drawing.Point(16, 61);
+            lblCPf.Name = "lblCPf";
+            lblCPf.Size = new System.Drawing.Size(40, 20);
+            lblCPf.TabIndex = 12;
+            lblCPf.Text = "CPF";
             // 
             // clienteBindingSource
             // 
@@ -128,16 +179,6 @@
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             this.dataGridViewTextBoxColumn6.ReadOnly = true;
             // 
-            // lblNome
-            // 
-            lblNome.AutoSize = true;
-            lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            lblNome.Location = new System.Drawing.Point(16, 9);
-            lblNome.Name = "lblNome";
-            lblNome.Size = new System.Drawing.Size(51, 20);
-            lblNome.TabIndex = 1;
-            lblNome.Text = "Nome";
-            // 
             // txtNome
             // 
             this.txtNome.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "Nome", true));
@@ -147,16 +188,6 @@
             this.txtNome.Size = new System.Drawing.Size(220, 26);
             this.txtNome.TabIndex = 2;
             // 
-            // lblEmail
-            // 
-            lblEmail.AutoSize = true;
-            lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            lblEmail.Location = new System.Drawing.Point(178, 61);
-            lblEmail.Name = "lblEmail";
-            lblEmail.Size = new System.Drawing.Size(48, 20);
-            lblEmail.TabIndex = 9;
-            lblEmail.Text = "Email";
-            // 
             // txtEmail
             // 
             this.txtEmail.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "Email", true));
@@ -165,16 +196,6 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(389, 26);
             this.txtEmail.TabIndex = 10;
-            // 
-            // lblCelular
-            // 
-            lblCelular.AutoSize = true;
-            lblCelular.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            lblCelular.Location = new System.Drawing.Point(263, 9);
-            lblCelular.Name = "lblCelular";
-            lblCelular.Size = new System.Drawing.Size(58, 20);
-            lblCelular.TabIndex = 10;
-            lblCelular.Text = "Celular";
             // 
             // mbCelular
             // 
@@ -186,16 +207,6 @@
             this.mbCelular.Size = new System.Drawing.Size(135, 26);
             this.mbCelular.TabIndex = 11;
             // 
-            // lblCEP
-            // 
-            lblCEP.AutoSize = true;
-            lblCEP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            lblCEP.Location = new System.Drawing.Point(432, 9);
-            lblCEP.Name = "lblCEP";
-            lblCEP.Size = new System.Drawing.Size(41, 20);
-            lblCEP.TabIndex = 11;
-            lblCEP.Text = "CEP";
-            // 
             // mbCEP
             // 
             this.mbCEP.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "CEP", true));
@@ -205,16 +216,6 @@
             this.mbCEP.Name = "mbCEP";
             this.mbCEP.Size = new System.Drawing.Size(135, 26);
             this.mbCEP.TabIndex = 12;
-            // 
-            // lblCPf
-            // 
-            lblCPf.AutoSize = true;
-            lblCPf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            lblCPf.Location = new System.Drawing.Point(16, 61);
-            lblCPf.Name = "lblCPf";
-            lblCPf.Size = new System.Drawing.Size(40, 20);
-            lblCPf.TabIndex = 12;
-            lblCPf.Text = "CPF";
             // 
             // mbCPF
             // 
@@ -228,10 +229,10 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(230, 127);
+            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.Location = new System.Drawing.Point(281, 127);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(98, 34);
+            this.btnCancelar.Size = new System.Drawing.Size(80, 34);
             this.btnCancelar.TabIndex = 16;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -239,10 +240,10 @@
             // 
             // btnExcluir
             // 
-            this.btnExcluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExcluir.Location = new System.Drawing.Point(331, 127);
+            this.btnExcluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExcluir.Location = new System.Drawing.Point(364, 127);
             this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(75, 34);
+            this.btnExcluir.Size = new System.Drawing.Size(63, 34);
             this.btnExcluir.TabIndex = 15;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
@@ -250,20 +251,32 @@
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalvar.Location = new System.Drawing.Point(151, 127);
+            this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalvar.Location = new System.Drawing.Point(214, 127);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(75, 34);
+            this.btnSalvar.Size = new System.Drawing.Size(61, 34);
             this.btnSalvar.TabIndex = 14;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
+            // 
+            // btnNovo
+            // 
+            this.btnNovo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNovo.Location = new System.Drawing.Point(154, 127);
+            this.btnNovo.Name = "btnNovo";
+            this.btnNovo.Size = new System.Drawing.Size(54, 34);
+            this.btnNovo.TabIndex = 17;
+            this.btnNovo.Text = "Novo";
+            this.btnNovo.UseVisualStyleBackColor = true;
+            this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
             // frmCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(577, 391);
+            this.Controls.Add(this.btnNovo);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.btnSalvar);
@@ -308,5 +321,6 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.Button btnSalvar;
+        private System.Windows.Forms.Button btnNovo;
     }
 }

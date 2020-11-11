@@ -259,9 +259,9 @@
             // 
             this.btnImprimir.Enabled = false;
             this.btnImprimir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnImprimir.Location = new System.Drawing.Point(24, 602);
+            this.btnImprimir.Location = new System.Drawing.Point(24, 596);
             this.btnImprimir.Name = "btnImprimir";
-            this.btnImprimir.Size = new System.Drawing.Size(92, 26);
+            this.btnImprimir.Size = new System.Drawing.Size(74, 29);
             this.btnImprimir.TabIndex = 23;
             this.btnImprimir.Text = "Imprimir";
             this.btnImprimir.UseVisualStyleBackColor = true;
@@ -294,9 +294,9 @@
             // 
             this.btnFinalizar.Enabled = false;
             this.btnFinalizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFinalizar.Location = new System.Drawing.Point(320, 602);
+            this.btnFinalizar.Location = new System.Drawing.Point(320, 596);
             this.btnFinalizar.Name = "btnFinalizar";
-            this.btnFinalizar.Size = new System.Drawing.Size(108, 26);
+            this.btnFinalizar.Size = new System.Drawing.Size(98, 29);
             this.btnFinalizar.TabIndex = 20;
             this.btnFinalizar.Text = "Finalizar";
             this.btnFinalizar.UseVisualStyleBackColor = true;
