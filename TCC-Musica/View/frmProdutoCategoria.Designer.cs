@@ -62,12 +62,13 @@
             this.dgvProduto.AllowUserToAddRows = false;
             this.dgvProduto.AllowUserToDeleteRows = false;
             this.dgvProduto.AutoGenerateColumns = false;
+            this.dgvProduto.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgvProduto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProduto.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3});
             this.dgvProduto.DataSource = this.produtoBindingSource;
-            this.dgvProduto.Location = new System.Drawing.Point(17, 72);
+            this.dgvProduto.Location = new System.Drawing.Point(11, 72);
             this.dgvProduto.Name = "dgvProduto";
             this.dgvProduto.ReadOnly = true;
             this.dgvProduto.RowHeadersVisible = false;
@@ -99,7 +100,7 @@
             this.cbCategoria.FormattingEnabled = true;
             this.cbCategoria.Location = new System.Drawing.Point(12, 36);
             this.cbCategoria.Name = "cbCategoria";
-            this.cbCategoria.Size = new System.Drawing.Size(180, 28);
+            this.cbCategoria.Size = new System.Drawing.Size(174, 28);
             this.cbCategoria.TabIndex = 2;
             this.cbCategoria.ValueMember = "Id";
             // 
@@ -110,7 +111,7 @@
             // btnPesquisar
             // 
             this.btnPesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPesquisar.Location = new System.Drawing.Point(198, 32);
+            this.btnPesquisar.Location = new System.Drawing.Point(192, 32);
             this.btnPesquisar.Name = "btnPesquisar";
             this.btnPesquisar.Size = new System.Drawing.Size(92, 34);
             this.btnPesquisar.TabIndex = 3;
@@ -122,6 +123,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(296, 298);
             this.Controls.Add(this.btnPesquisar);
             this.Controls.Add(lblCategoria);

@@ -118,6 +118,7 @@
             this.dgvFuncionario.AllowUserToAddRows = false;
             this.dgvFuncionario.AllowUserToDeleteRows = false;
             this.dgvFuncionario.AutoGenerateColumns = false;
+            this.dgvFuncionario.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgvFuncionario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvFuncionario.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -265,6 +266,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(532, 401);
             this.Controls.Add(this.btnNovo);
             this.Controls.Add(this.btnCancelar);

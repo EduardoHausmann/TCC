@@ -37,13 +37,23 @@
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cbCliente = new System.Windows.Forms.ComboBox();
-            this.btnPesquisar = new System.Windows.Forms.Button();
             this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.btnPesquisar = new System.Windows.Forms.Button();
             lblCliente = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.vendaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVenda)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // lblCliente
+            // 
+            lblCliente.AutoSize = true;
+            lblCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            lblCliente.Location = new System.Drawing.Point(12, 9);
+            lblCliente.Name = "lblCliente";
+            lblCliente.Size = new System.Drawing.Size(58, 20);
+            lblCliente.TabIndex = 1;
+            lblCliente.Text = "Cliente";
             // 
             // vendaBindingSource
             // 
@@ -54,6 +64,7 @@
             this.dgvVenda.AllowUserToAddRows = false;
             this.dgvVenda.AllowUserToDeleteRows = false;
             this.dgvVenda.AutoGenerateColumns = false;
+            this.dgvVenda.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgvVenda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvVenda.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -96,16 +107,6 @@
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.ReadOnly = true;
             // 
-            // lblCliente
-            // 
-            lblCliente.AutoSize = true;
-            lblCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            lblCliente.Location = new System.Drawing.Point(12, 9);
-            lblCliente.Name = "lblCliente";
-            lblCliente.Size = new System.Drawing.Size(58, 20);
-            lblCliente.TabIndex = 1;
-            lblCliente.Text = "Cliente";
-            // 
             // cbCliente
             // 
             this.cbCliente.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.vendaBindingSource, "IdCliente", true));
@@ -120,6 +121,10 @@
             this.cbCliente.TabIndex = 2;
             this.cbCliente.ValueMember = "Id";
             // 
+            // clienteBindingSource
+            // 
+            this.clienteBindingSource.DataSource = typeof(Musica.DAL.Cliente);
+            // 
             // btnPesquisar
             // 
             this.btnPesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -131,14 +136,11 @@
             this.btnPesquisar.UseVisualStyleBackColor = true;
             this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
             // 
-            // clienteBindingSource
-            // 
-            this.clienteBindingSource.DataSource = typeof(Musica.DAL.Cliente);
-            // 
             // frmVendaCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(425, 357);
             this.Controls.Add(this.btnPesquisar);
             this.Controls.Add(lblCliente);
