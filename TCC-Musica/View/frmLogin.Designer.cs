@@ -121,6 +121,7 @@
             this.Controls.Add(this.txtUsuario);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = ".: Tela de Login :.";
             ((System.ComponentModel.ISupportInitialize)(this.funcionarioBindingSource)).EndInit();
             this.ResumeLayout(false);
