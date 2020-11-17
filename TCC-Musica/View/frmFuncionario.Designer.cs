@@ -66,7 +66,7 @@
             lblUsuario.Location = new System.Drawing.Point(12, 9);
             lblUsuario.Name = "lblUsuario";
             lblUsuario.Size = new System.Drawing.Size(64, 20);
-            lblUsuario.TabIndex = 1;
+            lblUsuario.TabIndex = 0;
             lblUsuario.Text = "Usuário";
             // 
             // lblSenha
@@ -76,7 +76,7 @@
             lblSenha.Location = new System.Drawing.Point(281, 9);
             lblSenha.Name = "lblSenha";
             lblSenha.Size = new System.Drawing.Size(56, 20);
-            lblSenha.TabIndex = 3;
+            lblSenha.TabIndex = 2;
             lblSenha.Text = "Senha";
             // 
             // lblCargo
@@ -86,7 +86,7 @@
             lblCargo.Location = new System.Drawing.Point(12, 61);
             lblCargo.Name = "lblCargo";
             lblCargo.Size = new System.Drawing.Size(52, 20);
-            lblCargo.TabIndex = 5;
+            lblCargo.TabIndex = 4;
             lblCargo.Text = "Cargo";
             // 
             // lblSalario
@@ -96,7 +96,7 @@
             lblSalario.Location = new System.Drawing.Point(210, 61);
             lblSalario.Name = "lblSalario";
             lblSalario.Size = new System.Drawing.Size(58, 20);
-            lblSalario.TabIndex = 7;
+            lblSalario.TabIndex = 6;
             lblSalario.Text = "Salário";
             // 
             // lblContato
@@ -106,7 +106,7 @@
             lblContato.Location = new System.Drawing.Point(363, 61);
             lblContato.Name = "lblContato";
             lblContato.Size = new System.Drawing.Size(66, 20);
-            lblContato.TabIndex = 9;
+            lblContato.TabIndex = 8;
             lblContato.Text = "Contato";
             // 
             // funcionarioBindingSource
@@ -133,7 +133,7 @@
             this.dgvFuncionario.RowHeadersVisible = false;
             this.dgvFuncionario.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvFuncionario.Size = new System.Drawing.Size(504, 220);
-            this.dgvFuncionario.TabIndex = 1;
+            this.dgvFuncionario.TabIndex = 14;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -177,7 +177,7 @@
             this.txtUsuario.Location = new System.Drawing.Point(16, 32);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(242, 26);
-            this.txtUsuario.TabIndex = 2;
+            this.txtUsuario.TabIndex = 1;
             // 
             // txtSenha
             // 
@@ -187,7 +187,7 @@
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(235, 26);
-            this.txtSenha.TabIndex = 4;
+            this.txtSenha.TabIndex = 3;
             // 
             // txtCargo
             // 
@@ -196,7 +196,7 @@
             this.txtCargo.Location = new System.Drawing.Point(16, 84);
             this.txtCargo.Name = "txtCargo";
             this.txtCargo.Size = new System.Drawing.Size(170, 26);
-            this.txtCargo.TabIndex = 6;
+            this.txtCargo.TabIndex = 5;
             // 
             // mbSalario
             // 
@@ -206,7 +206,7 @@
             this.mbSalario.Mask = "9,999.99";
             this.mbSalario.Name = "mbSalario";
             this.mbSalario.Size = new System.Drawing.Size(118, 26);
-            this.mbSalario.TabIndex = 8;
+            this.mbSalario.TabIndex = 7;
             // 
             // mbContato
             // 
@@ -216,7 +216,7 @@
             this.mbContato.Mask = "(99)99999-9999";
             this.mbContato.Name = "mbContato";
             this.mbContato.Size = new System.Drawing.Size(153, 26);
-            this.mbContato.TabIndex = 10;
+            this.mbContato.TabIndex = 9;
             // 
             // btnCancelar
             // 
@@ -224,7 +224,7 @@
             this.btnCancelar.Location = new System.Drawing.Point(248, 133);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(81, 34);
-            this.btnCancelar.TabIndex = 13;
+            this.btnCancelar.TabIndex = 12;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
@@ -235,7 +235,7 @@
             this.btnExcluir.Location = new System.Drawing.Point(335, 133);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(65, 34);
-            this.btnExcluir.TabIndex = 12;
+            this.btnExcluir.TabIndex = 13;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
             this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
@@ -257,7 +257,7 @@
             this.btnNovo.Location = new System.Drawing.Point(120, 134);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(55, 34);
-            this.btnNovo.TabIndex = 14;
+            this.btnNovo.TabIndex = 10;
             this.btnNovo.Text = "Novo";
             this.btnNovo.UseVisualStyleBackColor = true;
             this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);

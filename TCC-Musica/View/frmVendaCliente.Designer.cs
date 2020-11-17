@@ -52,7 +52,7 @@
             lblCliente.Location = new System.Drawing.Point(12, 9);
             lblCliente.Name = "lblCliente";
             lblCliente.Size = new System.Drawing.Size(58, 20);
-            lblCliente.TabIndex = 1;
+            lblCliente.TabIndex = 0;
             lblCliente.Text = "Cliente";
             // 
             // vendaBindingSource
@@ -77,7 +77,7 @@
             this.dgvVenda.ReadOnly = true;
             this.dgvVenda.RowHeadersVisible = false;
             this.dgvVenda.Size = new System.Drawing.Size(406, 285);
-            this.dgvVenda.TabIndex = 1;
+            this.dgvVenda.TabIndex = 3;
             // 
             // Column1
             // 
@@ -118,7 +118,7 @@
             this.cbCliente.Location = new System.Drawing.Point(12, 32);
             this.cbCliente.Name = "cbCliente";
             this.cbCliente.Size = new System.Drawing.Size(293, 28);
-            this.cbCliente.TabIndex = 2;
+            this.cbCliente.TabIndex = 1;
             this.cbCliente.ValueMember = "Id";
             // 
             // clienteBindingSource
@@ -131,7 +131,7 @@
             this.btnPesquisar.Location = new System.Drawing.Point(311, 29);
             this.btnPesquisar.Name = "btnPesquisar";
             this.btnPesquisar.Size = new System.Drawing.Size(88, 31);
-            this.btnPesquisar.TabIndex = 3;
+            this.btnPesquisar.TabIndex = 2;
             this.btnPesquisar.Text = "Pesquisar";
             this.btnPesquisar.UseVisualStyleBackColor = true;
             this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);

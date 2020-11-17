@@ -67,7 +67,7 @@
             lblNome.Location = new System.Drawing.Point(16, 9);
             lblNome.Name = "lblNome";
             lblNome.Size = new System.Drawing.Size(51, 20);
-            lblNome.TabIndex = 1;
+            lblNome.TabIndex = 0;
             lblNome.Text = "Nome";
             // 
             // lblEmail
@@ -77,7 +77,7 @@
             lblEmail.Location = new System.Drawing.Point(178, 61);
             lblEmail.Name = "lblEmail";
             lblEmail.Size = new System.Drawing.Size(48, 20);
-            lblEmail.TabIndex = 9;
+            lblEmail.TabIndex = 8;
             lblEmail.Text = "Email";
             // 
             // lblCelular
@@ -87,7 +87,7 @@
             lblCelular.Location = new System.Drawing.Point(263, 9);
             lblCelular.Name = "lblCelular";
             lblCelular.Size = new System.Drawing.Size(58, 20);
-            lblCelular.TabIndex = 10;
+            lblCelular.TabIndex = 2;
             lblCelular.Text = "Celular";
             // 
             // lblCEP
@@ -97,7 +97,7 @@
             lblCEP.Location = new System.Drawing.Point(432, 9);
             lblCEP.Name = "lblCEP";
             lblCEP.Size = new System.Drawing.Size(41, 20);
-            lblCEP.TabIndex = 11;
+            lblCEP.TabIndex = 4;
             lblCEP.Text = "CEP";
             // 
             // lblCPf
@@ -107,7 +107,7 @@
             lblCPf.Location = new System.Drawing.Point(16, 61);
             lblCPf.Name = "lblCPf";
             lblCPf.Size = new System.Drawing.Size(40, 20);
-            lblCPf.TabIndex = 12;
+            lblCPf.TabIndex = 6;
             lblCPf.Text = "CPF";
             // 
             // clienteBindingSource
@@ -135,7 +135,7 @@
             this.dgvCliente.RowHeadersVisible = false;
             this.dgvCliente.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvCliente.Size = new System.Drawing.Size(555, 220);
-            this.dgvCliente.TabIndex = 1;
+            this.dgvCliente.TabIndex = 14;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -187,7 +187,7 @@
             this.txtNome.Location = new System.Drawing.Point(16, 32);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(220, 26);
-            this.txtNome.TabIndex = 2;
+            this.txtNome.TabIndex = 1;
             // 
             // txtEmail
             // 
@@ -196,7 +196,7 @@
             this.txtEmail.Location = new System.Drawing.Point(182, 84);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(389, 26);
-            this.txtEmail.TabIndex = 10;
+            this.txtEmail.TabIndex = 9;
             // 
             // mbCelular
             // 
@@ -206,7 +206,7 @@
             this.mbCelular.Mask = "(99)99999-9999";
             this.mbCelular.Name = "mbCelular";
             this.mbCelular.Size = new System.Drawing.Size(135, 26);
-            this.mbCelular.TabIndex = 11;
+            this.mbCelular.TabIndex = 3;
             // 
             // mbCEP
             // 
@@ -216,7 +216,7 @@
             this.mbCEP.Mask = "99999-999";
             this.mbCEP.Name = "mbCEP";
             this.mbCEP.Size = new System.Drawing.Size(135, 26);
-            this.mbCEP.TabIndex = 12;
+            this.mbCEP.TabIndex = 5;
             // 
             // mbCPF
             // 
@@ -226,7 +226,7 @@
             this.mbCPF.Mask = "999,999,999-99";
             this.mbCPF.Name = "mbCPF";
             this.mbCPF.Size = new System.Drawing.Size(139, 26);
-            this.mbCPF.TabIndex = 13;
+            this.mbCPF.TabIndex = 7;
             // 
             // btnCancelar
             // 
@@ -234,7 +234,7 @@
             this.btnCancelar.Location = new System.Drawing.Point(281, 127);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(80, 34);
-            this.btnCancelar.TabIndex = 16;
+            this.btnCancelar.TabIndex = 12;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
@@ -245,7 +245,7 @@
             this.btnExcluir.Location = new System.Drawing.Point(364, 127);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(63, 34);
-            this.btnExcluir.TabIndex = 15;
+            this.btnExcluir.TabIndex = 13;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
             this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
@@ -256,7 +256,7 @@
             this.btnSalvar.Location = new System.Drawing.Point(214, 127);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(61, 34);
-            this.btnSalvar.TabIndex = 14;
+            this.btnSalvar.TabIndex = 11;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
@@ -267,7 +267,7 @@
             this.btnNovo.Location = new System.Drawing.Point(154, 127);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(54, 34);
-            this.btnNovo.TabIndex = 17;
+            this.btnNovo.TabIndex = 10;
             this.btnNovo.Text = "Novo";
             this.btnNovo.UseVisualStyleBackColor = true;
             this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);

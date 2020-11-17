@@ -50,7 +50,7 @@
             lblCategoria.Location = new System.Drawing.Point(12, 9);
             lblCategoria.Name = "lblCategoria";
             lblCategoria.Size = new System.Drawing.Size(78, 20);
-            lblCategoria.TabIndex = 1;
+            lblCategoria.TabIndex = 0;
             lblCategoria.Text = "Categoria";
             // 
             // produtoBindingSource
@@ -73,7 +73,7 @@
             this.dgvProduto.ReadOnly = true;
             this.dgvProduto.RowHeadersVisible = false;
             this.dgvProduto.Size = new System.Drawing.Size(273, 220);
-            this.dgvProduto.TabIndex = 1;
+            this.dgvProduto.TabIndex = 3;
             // 
             // dataGridViewTextBoxColumn2
             // 
@@ -101,7 +101,7 @@
             this.cbCategoria.Location = new System.Drawing.Point(12, 36);
             this.cbCategoria.Name = "cbCategoria";
             this.cbCategoria.Size = new System.Drawing.Size(174, 28);
-            this.cbCategoria.TabIndex = 2;
+            this.cbCategoria.TabIndex = 1;
             this.cbCategoria.ValueMember = "Id";
             // 
             // categoriaBindingSource
@@ -114,7 +114,7 @@
             this.btnPesquisar.Location = new System.Drawing.Point(192, 32);
             this.btnPesquisar.Name = "btnPesquisar";
             this.btnPesquisar.Size = new System.Drawing.Size(92, 34);
-            this.btnPesquisar.TabIndex = 3;
+            this.btnPesquisar.TabIndex = 2;
             this.btnPesquisar.Text = "Pesquisar";
             this.btnPesquisar.UseVisualStyleBackColor = true;
             this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);

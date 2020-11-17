@@ -31,14 +31,14 @@
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.Label lnlCategoria;
             this.dgvCategoria = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.categoriaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.txtCategoria = new System.Windows.Forms.TextBox();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnNovo = new System.Windows.Forms.Button();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             lnlCategoria = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCategoria)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoriaBindingSource)).BeginInit();
@@ -51,7 +51,7 @@
             lnlCategoria.Location = new System.Drawing.Point(8, 9);
             lnlCategoria.Name = "lnlCategoria";
             lnlCategoria.Size = new System.Drawing.Size(78, 20);
-            lnlCategoria.TabIndex = 1;
+            lnlCategoria.TabIndex = 0;
             lnlCategoria.Text = "Categoria";
             // 
             // dgvCategoria
@@ -71,7 +71,22 @@
             this.dgvCategoria.RowHeadersVisible = false;
             this.dgvCategoria.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvCategoria.Size = new System.Drawing.Size(282, 220);
-            this.dgvCategoria.TabIndex = 1;
+            this.dgvCategoria.TabIndex = 6;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Código";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Nome";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Categoria";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Width = 178;
             // 
             // categoriaBindingSource
             // 
@@ -84,7 +99,7 @@
             this.txtCategoria.Location = new System.Drawing.Point(11, 32);
             this.txtCategoria.Name = "txtCategoria";
             this.txtCategoria.Size = new System.Drawing.Size(282, 26);
-            this.txtCategoria.TabIndex = 2;
+            this.txtCategoria.TabIndex = 1;
             // 
             // btnSalvar
             // 
@@ -103,7 +118,7 @@
             this.btnExcluir.Location = new System.Drawing.Point(229, 64);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(64, 34);
-            this.btnExcluir.TabIndex = 4;
+            this.btnExcluir.TabIndex = 5;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
             this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
@@ -114,7 +129,7 @@
             this.btnCancelar.Location = new System.Drawing.Point(142, 64);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(81, 34);
-            this.btnCancelar.TabIndex = 5;
+            this.btnCancelar.TabIndex = 4;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
@@ -125,25 +140,10 @@
             this.btnNovo.Location = new System.Drawing.Point(11, 64);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(53, 34);
-            this.btnNovo.TabIndex = 6;
+            this.btnNovo.TabIndex = 2;
             this.btnNovo.Text = "Novo";
             this.btnNovo.UseVisualStyleBackColor = true;
             this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Id";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Nome";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Categoria";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Width = 178;
             // 
             // frmCategoria
             // 

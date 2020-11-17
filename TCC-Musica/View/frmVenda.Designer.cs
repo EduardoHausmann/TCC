@@ -95,7 +95,7 @@
             lblCliente.Location = new System.Drawing.Point(12, 9);
             lblCliente.Name = "lblCliente";
             lblCliente.Size = new System.Drawing.Size(58, 20);
-            lblCliente.TabIndex = 1;
+            lblCliente.TabIndex = 0;
             lblCliente.Text = "Cliente";
             // 
             // lblCodVenda
@@ -145,7 +145,7 @@
             lblValorVenda.Location = new System.Drawing.Point(153, 474);
             lblValorVenda.Name = "lblValorVenda";
             lblValorVenda.Size = new System.Drawing.Size(46, 20);
-            lblValorVenda.TabIndex = 10;
+            lblValorVenda.TabIndex = 11;
             lblValorVenda.Text = "Valor";
             // 
             // lblDesconto
@@ -155,7 +155,7 @@
             lblDesconto.Location = new System.Drawing.Point(153, 526);
             lblDesconto.Name = "lblDesconto";
             lblDesconto.Size = new System.Drawing.Size(78, 20);
-            lblDesconto.TabIndex = 12;
+            lblDesconto.TabIndex = 13;
             lblDesconto.Text = "Desconto";
             // 
             // lblValorPago
@@ -165,7 +165,7 @@
             lblValorPago.Location = new System.Drawing.Point(153, 579);
             lblValorPago.Name = "lblValorPago";
             lblValorPago.Size = new System.Drawing.Size(87, 20);
-            lblValorPago.TabIndex = 14;
+            lblValorPago.TabIndex = 16;
             lblValorPago.Text = "Valor Pago";
             // 
             // lblDataVencimento
@@ -175,7 +175,7 @@
             lblDataVencimento.Location = new System.Drawing.Point(285, 526);
             lblDataVencimento.Name = "lblDataVencimento";
             lblDataVencimento.Size = new System.Drawing.Size(133, 20);
-            lblDataVencimento.TabIndex = 16;
+            lblDataVencimento.TabIndex = 20;
             lblDataVencimento.Text = "Data Vencimento";
             // 
             // lblStatus
@@ -203,7 +203,7 @@
             this.cbCliente.Location = new System.Drawing.Point(16, 32);
             this.cbCliente.Name = "cbCliente";
             this.cbCliente.Size = new System.Drawing.Size(316, 28);
-            this.cbCliente.TabIndex = 2;
+            this.cbCliente.TabIndex = 1;
             this.cbCliente.ValueMember = "Id";
             // 
             // clienteBindingSource
@@ -216,7 +216,7 @@
             this.btnNovaVenda.Location = new System.Drawing.Point(363, 32);
             this.btnNovaVenda.Name = "btnNovaVenda";
             this.btnNovaVenda.Size = new System.Drawing.Size(114, 27);
-            this.btnNovaVenda.TabIndex = 3;
+            this.btnNovaVenda.TabIndex = 2;
             this.btnNovaVenda.Text = "Nova Venda";
             this.btnNovaVenda.UseVisualStyleBackColor = true;
             this.btnNovaVenda.Click += new System.EventHandler(this.btnNovaVenda_Click);
@@ -250,7 +250,7 @@
             this.gbVenda.Location = new System.Drawing.Point(12, 66);
             this.gbVenda.Name = "gbVenda";
             this.gbVenda.Size = new System.Drawing.Size(480, 634);
-            this.gbVenda.TabIndex = 4;
+            this.gbVenda.TabIndex = 3;
             this.gbVenda.TabStop = false;
             this.gbVenda.Text = "Nova Venda";
             this.gbVenda.Visible = false;
@@ -274,7 +274,7 @@
             this.btnFV.Location = new System.Drawing.Point(5, 545);
             this.btnFV.Name = "btnFV";
             this.btnFV.Size = new System.Drawing.Size(141, 29);
-            this.btnFV.TabIndex = 22;
+            this.btnFV.TabIndex = 15;
             this.btnFV.Text = "Finalizar Venda";
             this.btnFV.UseVisualStyleBackColor = true;
             this.btnFV.Click += new System.EventHandler(this.btnFV_Click);
@@ -285,7 +285,7 @@
             this.btnFP.Location = new System.Drawing.Point(6, 494);
             this.btnFP.Name = "btnFP";
             this.btnFP.Size = new System.Drawing.Size(140, 28);
-            this.btnFP.TabIndex = 21;
+            this.btnFP.TabIndex = 10;
             this.btnFP.Text = "Finalizar Pedido";
             this.btnFP.UseVisualStyleBackColor = true;
             this.btnFP.Click += new System.EventHandler(this.btnFP_Click);
@@ -297,7 +297,7 @@
             this.btnFinalizar.Location = new System.Drawing.Point(320, 596);
             this.btnFinalizar.Name = "btnFinalizar";
             this.btnFinalizar.Size = new System.Drawing.Size(98, 29);
-            this.btnFinalizar.TabIndex = 20;
+            this.btnFinalizar.TabIndex = 22;
             this.btnFinalizar.Text = "Finalizar";
             this.btnFinalizar.UseVisualStyleBackColor = true;
             this.btnFinalizar.Click += new System.EventHandler(this.btnFinalizar_Click);
@@ -335,7 +335,7 @@
             this.dtpDataVencimento.Location = new System.Drawing.Point(289, 548);
             this.dtpDataVencimento.Name = "dtpDataVencimento";
             this.dtpDataVencimento.Size = new System.Drawing.Size(172, 26);
-            this.dtpDataVencimento.TabIndex = 17;
+            this.dtpDataVencimento.TabIndex = 21;
             // 
             // txtValorPago
             // 
@@ -345,7 +345,7 @@
             this.txtValorPago.Name = "txtValorPago";
             this.txtValorPago.ReadOnly = true;
             this.txtValorPago.Size = new System.Drawing.Size(122, 26);
-            this.txtValorPago.TabIndex = 15;
+            this.txtValorPago.TabIndex = 17;
             // 
             // txtDesconto
             // 
@@ -355,7 +355,7 @@
             this.txtDesconto.Name = "txtDesconto";
             this.txtDesconto.ReadOnly = true;
             this.txtDesconto.Size = new System.Drawing.Size(122, 26);
-            this.txtDesconto.TabIndex = 13;
+            this.txtDesconto.TabIndex = 14;
             // 
             // txtValorVenda
             // 
@@ -365,7 +365,7 @@
             this.txtValorVenda.Name = "txtValorVenda";
             this.txtValorVenda.ReadOnly = true;
             this.txtValorVenda.Size = new System.Drawing.Size(122, 26);
-            this.txtValorVenda.TabIndex = 11;
+            this.txtValorVenda.TabIndex = 12;
             // 
             // dgvItem
             // 

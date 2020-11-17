@@ -87,6 +87,9 @@ namespace View
             cbCliente.Enabled = false;
             gbVenda.Visible = true;
             btnNovaVenda.Enabled = false;
+            cbProduto.Enabled = true;
+            btnNovoItem.Enabled = true;
+            btnFP.Enabled = true;
             this.itemVendaBindingSource.DataSource = DataContextFactory.DataContext.ItemVenda.Where(x => x.IdProduto == this.VendaCorrente.Id);
             NovoItem();
         }

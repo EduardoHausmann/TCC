@@ -61,7 +61,7 @@
             lblProduto.Location = new System.Drawing.Point(6, 7);
             lblProduto.Name = "lblProduto";
             lblProduto.Size = new System.Drawing.Size(65, 20);
-            lblProduto.TabIndex = 1;
+            lblProduto.TabIndex = 0;
             lblProduto.Text = "Produto";
             // 
             // lblValor
@@ -71,7 +71,7 @@
             lblValor.Location = new System.Drawing.Point(255, 7);
             lblValor.Name = "lblValor";
             lblValor.Size = new System.Drawing.Size(46, 20);
-            lblValor.TabIndex = 3;
+            lblValor.TabIndex = 2;
             lblValor.Text = "Valor";
             // 
             // lblCategoria
@@ -81,7 +81,7 @@
             lblCategoria.Location = new System.Drawing.Point(6, 71);
             lblCategoria.Name = "lblCategoria";
             lblCategoria.Size = new System.Drawing.Size(78, 20);
-            lblCategoria.TabIndex = 5;
+            lblCategoria.TabIndex = 4;
             lblCategoria.Text = "Categoria";
             // 
             // dgvProduto
@@ -102,7 +102,7 @@
             this.dgvProduto.RowHeadersVisible = false;
             this.dgvProduto.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvProduto.Size = new System.Drawing.Size(403, 220);
-            this.dgvProduto.TabIndex = 1;
+            this.dgvProduto.TabIndex = 10;
             this.dgvProduto.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgvProduto_CellFormatting);
             // 
             // dataGridViewTextBoxColumn1
@@ -144,7 +144,7 @@
             this.txtProduto.Location = new System.Drawing.Point(10, 30);
             this.txtProduto.Name = "txtProduto";
             this.txtProduto.Size = new System.Drawing.Size(201, 26);
-            this.txtProduto.TabIndex = 2;
+            this.txtProduto.TabIndex = 1;
             // 
             // txtValor
             // 
@@ -154,7 +154,7 @@
             this.txtValor.Mask = "9,999.99";
             this.txtValor.Name = "txtValor";
             this.txtValor.Size = new System.Drawing.Size(154, 26);
-            this.txtValor.TabIndex = 4;
+            this.txtValor.TabIndex = 3;
             // 
             // cbCategoria
             // 
@@ -167,7 +167,7 @@
             this.cbCategoria.Location = new System.Drawing.Point(10, 94);
             this.cbCategoria.Name = "cbCategoria";
             this.cbCategoria.Size = new System.Drawing.Size(403, 28);
-            this.cbCategoria.TabIndex = 6;
+            this.cbCategoria.TabIndex = 5;
             this.cbCategoria.ValueMember = "Id";
             // 
             // categoriaBindingSource
@@ -180,7 +180,7 @@
             this.btnCancelar.Location = new System.Drawing.Point(195, 133);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(80, 34);
-            this.btnCancelar.TabIndex = 9;
+            this.btnCancelar.TabIndex = 8;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
@@ -191,7 +191,7 @@
             this.btnExcluir.Location = new System.Drawing.Point(281, 133);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(67, 34);
-            this.btnExcluir.TabIndex = 8;
+            this.btnExcluir.TabIndex = 9;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
             this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
@@ -213,7 +213,7 @@
             this.btnNovo.Location = new System.Drawing.Point(67, 133);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(54, 34);
-            this.btnNovo.TabIndex = 10;
+            this.btnNovo.TabIndex = 6;
             this.btnNovo.Text = "Novo";
             this.btnNovo.UseVisualStyleBackColor = true;
             this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);

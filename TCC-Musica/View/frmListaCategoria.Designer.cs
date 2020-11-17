@@ -44,7 +44,7 @@
             lblCategoria.Location = new System.Drawing.Point(12, 9);
             lblCategoria.Name = "lblCategoria";
             lblCategoria.Size = new System.Drawing.Size(178, 20);
-            lblCategoria.TabIndex = 1;
+            lblCategoria.TabIndex = 0;
             lblCategoria.Text = "Selecione um Categoria";
             // 
             // categoriaBindingSource
@@ -61,7 +61,7 @@
             this.cbCategoria.Location = new System.Drawing.Point(16, 32);
             this.cbCategoria.Name = "cbCategoria";
             this.cbCategoria.Size = new System.Drawing.Size(344, 28);
-            this.cbCategoria.TabIndex = 2;
+            this.cbCategoria.TabIndex = 1;
             this.cbCategoria.ValueMember = "Id";
             // 
             // brnGeral
@@ -70,7 +70,7 @@
             this.brnGeral.Location = new System.Drawing.Point(103, 70);
             this.brnGeral.Name = "brnGeral";
             this.brnGeral.Size = new System.Drawing.Size(148, 37);
-            this.brnGeral.TabIndex = 3;
+            this.brnGeral.TabIndex = 2;
             this.brnGeral.Text = "Gerar Relatório";
             this.brnGeral.UseVisualStyleBackColor = true;
             this.brnGeral.Click += new System.EventHandler(this.brnGeral_Click);
