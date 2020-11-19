@@ -68,6 +68,8 @@
             this.cbProduto = new System.Windows.Forms.ComboBox();
             this.produtoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.txtCodVenda = new System.Windows.Forms.TextBox();
+            this.btnRemover = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
             lblCliente = new System.Windows.Forms.Label();
             lblCodVenda = new System.Windows.Forms.Label();
             lblProduto = new System.Windows.Forms.Label();
@@ -223,6 +225,8 @@
             // 
             // gbVenda
             // 
+            this.gbVenda.Controls.Add(this.btnCancelar);
+            this.gbVenda.Controls.Add(this.btnRemover);
             this.gbVenda.Controls.Add(this.btnImprimir);
             this.gbVenda.Controls.Add(this.btnFV);
             this.gbVenda.Controls.Add(this.btnFP);
@@ -385,6 +389,7 @@
             this.dgvItem.Name = "dgvItem";
             this.dgvItem.ReadOnly = true;
             this.dgvItem.RowHeadersVisible = false;
+            this.dgvItem.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvItem.Size = new System.Drawing.Size(455, 220);
             this.dgvItem.TabIndex = 9;
             this.dgvItem.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgvItem_CellFormatting);
@@ -431,9 +436,9 @@
             // btnNovoItem
             // 
             this.btnNovoItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNovoItem.Location = new System.Drawing.Point(202, 215);
+            this.btnNovoItem.Location = new System.Drawing.Point(176, 212);
             this.btnNovoItem.Name = "btnNovoItem";
-            this.btnNovoItem.Size = new System.Drawing.Size(101, 27);
+            this.btnNovoItem.Size = new System.Drawing.Size(99, 27);
             this.btnNovoItem.TabIndex = 8;
             this.btnNovoItem.Text = "Novo Item";
             this.btnNovoItem.UseVisualStyleBackColor = true;
@@ -486,6 +491,28 @@
             this.txtCodVenda.ReadOnly = true;
             this.txtCodVenda.Size = new System.Drawing.Size(145, 26);
             this.txtCodVenda.TabIndex = 1;
+            // 
+            // btnRemover
+            // 
+            this.btnRemover.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemover.Location = new System.Drawing.Point(281, 212);
+            this.btnRemover.Name = "btnRemover";
+            this.btnRemover.Size = new System.Drawing.Size(83, 26);
+            this.btnRemover.TabIndex = 24;
+            this.btnRemover.Text = "Remover";
+            this.btnRemover.UseVisualStyleBackColor = true;
+            this.btnRemover.Click += new System.EventHandler(this.btnRemover_Click);
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.Location = new System.Drawing.Point(370, 212);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(83, 26);
+            this.btnCancelar.TabIndex = 25;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // frmVenda
             // 
@@ -547,5 +574,7 @@
         private System.Windows.Forms.Button btnFinalizar;
         private System.Windows.Forms.BindingSource statusPagamentoBindingSource;
         private System.Windows.Forms.BindingSource produtoBindingSource;
+        private System.Windows.Forms.Button btnRemover;
+        private System.Windows.Forms.Button btnCancelar;
     }
 }

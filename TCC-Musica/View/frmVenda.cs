@@ -193,5 +193,17 @@ namespace View
             cbCliente.SelectedItem = null;
             btnNovaVenda.Enabled = true;
         }
+
+        private void btnRemover_Click(object sender, EventArgs e)
+        {
+            this.itemVendaBindingSource.RemoveCurrent();
+            dgvItem.Refresh();
+            MessageBox.Show("Item Removido!");
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.itemVendaBindingSource.CancelEdit();
+        }
     }
 }
