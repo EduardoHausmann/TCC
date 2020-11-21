@@ -192,6 +192,28 @@ namespace View
             gbVenda.Visible = false;
             cbCliente.SelectedItem = null;
             btnNovaVenda.Enabled = true;
+            txtCodVenda.Enabled = true;
+            cbProduto.Enabled = true;
+            txtValor.Enabled = true;
+            txtQuantidade.Enabled = true;
+            txtDesconto.Enabled = true;
+            btnNovoItem.Enabled = true;
+            btnRemover.Enabled = true;
+            btnCancelar.Enabled = true;
+        }
+
+        private void MostrarSubtracao()
+        {
+            decimal total = 0;
+            foreach (DataGridViewRow dg in dgvItem.Rows)
+            {
+                decimal v1 = Convert.ToDecimal(dg.Cells[2].Value);
+                decimal v2 = Convert.ToDecimal(dg.Cells[3].Value);
+                decimal subtotal = v1 * v2;
+                dg.Cells[4].Value = subtotal;
+                total = subtotal - total;
+            }
+            this.VendaCorrente.Valor = total;
         }
 
         private void btnRemover_Click(object sender, EventArgs e)
@@ -199,6 +221,7 @@ namespace View
             this.itemVendaBindingSource.RemoveCurrent();
             dgvItem.Refresh();
             MessageBox.Show("Item Removido!");
+            MostrarSubtracao();
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
