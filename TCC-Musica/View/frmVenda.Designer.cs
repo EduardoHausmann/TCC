@@ -44,7 +44,8 @@
             this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btnNovaVenda = new System.Windows.Forms.Button();
             this.gbVenda = new System.Windows.Forms.GroupBox();
-            this.btnImprimir = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnRemover = new System.Windows.Forms.Button();
             this.btnFV = new System.Windows.Forms.Button();
             this.btnFP = new System.Windows.Forms.Button();
             this.btnFinalizar = new System.Windows.Forms.Button();
@@ -68,8 +69,7 @@
             this.cbProduto = new System.Windows.Forms.ComboBox();
             this.produtoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.txtCodVenda = new System.Windows.Forms.TextBox();
-            this.btnRemover = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnImprimir = new System.Windows.Forms.Button();
             lblCliente = new System.Windows.Forms.Label();
             lblCodVenda = new System.Windows.Forms.Label();
             lblProduto = new System.Windows.Forms.Label();
@@ -225,9 +225,9 @@
             // 
             // gbVenda
             // 
+            this.gbVenda.Controls.Add(this.btnImprimir);
             this.gbVenda.Controls.Add(this.btnCancelar);
             this.gbVenda.Controls.Add(this.btnRemover);
-            this.gbVenda.Controls.Add(this.btnImprimir);
             this.gbVenda.Controls.Add(this.btnFV);
             this.gbVenda.Controls.Add(this.btnFP);
             this.gbVenda.Controls.Add(this.btnFinalizar);
@@ -259,17 +259,27 @@
             this.gbVenda.Text = "Nova Venda";
             this.gbVenda.Visible = false;
             // 
-            // btnImprimir
+            // btnCancelar
             // 
-            this.btnImprimir.Enabled = false;
-            this.btnImprimir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnImprimir.Location = new System.Drawing.Point(24, 596);
-            this.btnImprimir.Name = "btnImprimir";
-            this.btnImprimir.Size = new System.Drawing.Size(74, 29);
-            this.btnImprimir.TabIndex = 23;
-            this.btnImprimir.Text = "Imprimir";
-            this.btnImprimir.UseVisualStyleBackColor = true;
-            this.btnImprimir.Visible = false;
+            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.Location = new System.Drawing.Point(370, 212);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(83, 26);
+            this.btnCancelar.TabIndex = 25;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // btnRemover
+            // 
+            this.btnRemover.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemover.Location = new System.Drawing.Point(281, 212);
+            this.btnRemover.Name = "btnRemover";
+            this.btnRemover.Size = new System.Drawing.Size(83, 26);
+            this.btnRemover.TabIndex = 24;
+            this.btnRemover.Text = "Remover";
+            this.btnRemover.UseVisualStyleBackColor = true;
+            this.btnRemover.Click += new System.EventHandler(this.btnRemover_Click);
             // 
             // btnFV
             // 
@@ -492,27 +502,17 @@
             this.txtCodVenda.Size = new System.Drawing.Size(145, 26);
             this.txtCodVenda.TabIndex = 1;
             // 
-            // btnRemover
+            // btnImprimir
             // 
-            this.btnRemover.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRemover.Location = new System.Drawing.Point(281, 212);
-            this.btnRemover.Name = "btnRemover";
-            this.btnRemover.Size = new System.Drawing.Size(83, 26);
-            this.btnRemover.TabIndex = 24;
-            this.btnRemover.Text = "Remover";
-            this.btnRemover.UseVisualStyleBackColor = true;
-            this.btnRemover.Click += new System.EventHandler(this.btnRemover_Click);
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(370, 212);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(83, 26);
-            this.btnCancelar.TabIndex = 25;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            this.btnImprimir.Enabled = false;
+            this.btnImprimir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnImprimir.Location = new System.Drawing.Point(22, 596);
+            this.btnImprimir.Name = "btnImprimir";
+            this.btnImprimir.Size = new System.Drawing.Size(98, 29);
+            this.btnImprimir.TabIndex = 26;
+            this.btnImprimir.Text = "Imprimir";
+            this.btnImprimir.UseVisualStyleBackColor = true;
+            this.btnImprimir.Visible = false;
             // 
             // frmVenda
             // 
@@ -568,7 +568,6 @@
         private System.Windows.Forms.TextBox txtValorPago;
         private System.Windows.Forms.TextBox txtDesconto;
         private System.Windows.Forms.TextBox txtValorVenda;
-        private System.Windows.Forms.Button btnImprimir;
         private System.Windows.Forms.Button btnFV;
         private System.Windows.Forms.Button btnFP;
         private System.Windows.Forms.Button btnFinalizar;
@@ -576,5 +575,6 @@
         private System.Windows.Forms.BindingSource produtoBindingSource;
         private System.Windows.Forms.Button btnRemover;
         private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Button btnImprimir;
     }
 }

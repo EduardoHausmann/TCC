@@ -200,6 +200,9 @@ namespace View
             btnNovoItem.Enabled = true;
             btnRemover.Enabled = true;
             btnCancelar.Enabled = true;
+            txtValorVenda.Clear();
+            txtDesconto.Clear();
+            txtValorPago.Clear();
         }
 
         private void MostrarSubtracao()
