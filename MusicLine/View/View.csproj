@@ -133,6 +133,7 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Produto.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="RPT\ProdutoCategoria.cs">
       <AutoGen>True</AutoGen>
